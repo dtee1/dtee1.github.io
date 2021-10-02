@@ -23,7 +23,7 @@ html, body {
     max-width: 100%;
   }
   .banner img {
-      max-width: 45%;
+      max-width: 35%;
       max-height: auto;
       border-radius: 10em;
       
@@ -46,7 +46,7 @@ nav {
   nav li {
     color: #fff;
     font-family: "cursive", sans-serif;
-    font-size: 1.25em;
+    font-size: 2em;
     display: flex;
     width: 100%;
     height: auto; 
