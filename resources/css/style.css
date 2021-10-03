@@ -1,9 +1,7 @@
 html, body {
-    background-image: url(../images/clouds.jpg);
-    background-repeat:no-repeat;
-    background-size: cover;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
   header{
@@ -12,8 +10,7 @@ html, body {
     max-height: auto;
     display: inline-flex;
     align-items: center;
-    margin: 0.1em 0.1em 0.1em 0.1em;
-    border-radius: 0.5em;
+  
     
   }
   .banner {
@@ -36,13 +33,14 @@ nav {
     height: auto;
     display: flex;
     align-items: center;
-    border-radius: 10em;
+    margin: 0.25em 0 0 0;
+   
   }
   nav ul {
       display:inline-flex;
       width: 100%;
-      margin:1em 1em 1em 1em;
       height: auto;
+      
         
   }
   nav li {
@@ -52,7 +50,6 @@ nav {
     display: flex;
     width: 100%;
     height: auto; 
-    flex: 2 4 700px;
     
   }
   .widgets {
@@ -78,11 +75,10 @@ nav {
     
   }
   a {
-    color: #fff;
-    background-color: #303030;
+    color:snow;
     text-decoration: none;
     padding: 0.3em 0.3em;
-    border-radius: 10px;
+    
   }
   
 h1,
@@ -97,10 +93,9 @@ p {
 }
 .social{
     display: flex;
-    justify-content: space-around;
-    width: 10em;
-    margin-left: auto;
-    margin-right: auto;
+    justify-content: space-between;
+    max-width: 25%;
+    height: auto;
 }
 .about {
     display: flex;
