@@ -16,19 +16,27 @@ p {
 .widgetsTop {
     width: 100%;
     z-index: 1;
+    width: 100%;
+    height: auto; 
+    
 } 
 .widgetsTop ul {
     display: inline-flex;
     width: 100%;
     margin:1em 1em 1em 1em;
     height: auto;
+    
+    
 } 
 .widgetsTop li {
     color: snow;
-    font-size: 0.85em;
+    font-size: 2em;
     display: flex;
     width: 100%;
     height: auto; 
+    justify-content: center;
+    padding-top: 2em;
+    
 }
 header{
     background: linear-gradient(283deg, #00198f, #911f00);
@@ -52,7 +60,6 @@ header{
   .banner {
     display:block;
     justify-content:center; 
-    
     max-width: 100%;
   }
   .banner #rowLion{
@@ -68,6 +75,7 @@ header{
       max-height: auto;
       border-radius: 50%;
       box-shadow:0px 6px 5px ;
+      margin-top: 2em;
   }
     .banner #me {
     color: snow;
@@ -90,6 +98,7 @@ nav {
       display:inline-flex;
       width: 100%;
       height: auto;
+      
     
         
   }
@@ -104,7 +113,6 @@ nav {
     width: 100%;
     height: auto;
 }
-
 
   
 .menu-content {
@@ -196,6 +204,7 @@ nav {
     margin-top: 0.5em;
     margin-bottom: 1em;
     letter-spacing: 0.05em;
+    font-size: 2em;
    
 }
 hr {
