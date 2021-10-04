@@ -18,6 +18,8 @@ p {
     z-index: 1;
     width: 100%;
     height: auto; 
+    display:flex;
+    justify-content: center;
     
 } 
 .widgetsTop ul {
@@ -25,6 +27,7 @@ p {
     width: 100%;
     margin:1em 1em 1em 1em;
     height: auto;
+  
     
     
 } 
@@ -71,7 +74,7 @@ header{
       
   }
   .banner img {
-      max-width: 60%;
+      max-width: 80%;
       max-height: auto;
       border-radius: 50%;
       box-shadow:0px 6px 5px ;
@@ -124,7 +127,7 @@ nav {
     width: 100%;
     height: auto;
    
-    padding-left: 55%;
+    padding-left: 40%;
   }
   
   .collapsable-menu ul {
@@ -248,13 +251,20 @@ hr {
     max-width: 100%;
     max-height: auto;
     display: block;
-    justify-content: space-between;   
+    
 }
 .skills h2 {
     margin-bottom: 1em;
     margin-top: 0;
     
 }
+.row {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    justify-content: center;
+}
+
 .skills img {
     width: 10%;
     max-height: auto;

@@ -6,7 +6,7 @@
         <!--The <title> element defines the title of the document. The title must be text-only, and it is shown in the browser's title bar or in the page's tab.-->
         <title>David Talson Personal Webpage</title>
         <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
-        <link rel="stylesheet" media="screen and (min-width: 400px)" href="./resources/css/smallscreen.css">
+        <link rel="stylesheet" media="screen and (min-width: 400px) and (max-width: 1000px)" href="./resources/css/smallscreen.css">
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
     </head>
     <body>
@@ -16,12 +16,12 @@
             <div class="banner">
                 <div class=widgetsTop>
                     <ul>
-                                    <li>Sun, Oct 3</li>
-                                    <li>12:12 PM</li>
-                                    <li> 24 C </li>
+                            <li><p id="month"></p><p>, </p><p id="day"></p></li>
+                            <li><p id="hour"></p><p>:</p><p id="min"></p></li>
+                            <li><p> Dream big, <br>dare to fail</p></li>
                     </ul>
+                    <script src="./scripts/returnmonth.js"></script>
                 </div>
-
                 <div id="rowLion">
                     <img src="resources/images/David.jpg" alt="lion"/>
                 </div>
@@ -34,8 +34,8 @@
             <ul>
                 <li>
                     <div class="social">
-                        <i class="fa fa-linkedin fa-2x"></i>
-                        <i class="fa fa-instagram fa-2x"></i>
+                        <a href="https://ca.linkedin.com/in/david-talson-718834132" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
+                        <a href="https://drive.google.com/file/d/1jDqKPWlcb3q8motkyuvAIjeBmrWG25mM/view?usp=sharing" target="_blank"><i class="fa fa-file fa-2x"></i></a>
                     </div>
                 </li>
                 <li>
@@ -44,9 +44,10 @@
                         <label for="menu">Menu</label>
                         <div class="menu-content">
                             <ul>
-                                <li><a href="#"></a>About</li>
+                                <li><a href="#"></a>..In progress..</li>
+                                <!--<li><a href="#"></a>About</li>
                                 <li><a href="#"></a>Blog</li>
-                                <li><a href="#"></a>Projects</li>
+                                <li><a href="#"></a>Projects</li> -->
                             </ul>
                         </div>
                     </div>
@@ -69,14 +70,14 @@
             <div class="information">
                 <h2>Skills</h2>            
                     <div class="skills">
-                        <div class="rowone"><img src="resources/images/html.png" alt="html">
+                        <div class="row"><img src="resources/images/html.png" alt="html">
                             <img src="resources/images/c.png" alt="C++">
                             <img src="resources/images/docker.png" alt="Docker">
                             <img src="resources/images/git.png" alt="Git">
                             <img src="resources/images/java.png" alt="Java">
                             <img src="resources/images/linux.png" alt="Java">
                         </div>
-                        <div class="rowtwo"><img src="resources/images/matlab.png" alt="Matlab">
+                        <div class="row"><img src="resources/images/matlab.png" alt="Matlab">
                             <img src="resources/images/python.png" alt="Python">
                             <img src="resources/images/selenium.jpeg" alt="Selenium">
                             <img src="resources/images/gnu-bash.png" alt="Shell scripting">
@@ -92,12 +93,15 @@
                 <div id="slideshow-example" data-component="slideshow">
                     <div role="list">
                         <div class="slide">
+                            <h2>Capstone project: Pacemaker simulation</h2>
                             <img src="./resources/images/pacemaker.png" alt="Fourth Year project">
                         </div>
                         <div class="slide">
+                            <h2>This webpage: html and css</h2>
                             <img src="./resources/images/html.png" alt="HTML">
                         </div>
                         <div class="slide">
+                            <h2>Data structures and Algorithms</h2>
                             <img src="./resources/images/c.png" alt="C++">
                         </div>
                     </div>
@@ -106,9 +110,7 @@
 
 
             </div>
-            <div class="game">
-                <h2>I can guess your age !!</h2>
-            </div>
+            <hr>
 
         </div> 
             
