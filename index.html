@@ -1,122 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-<html>
-    <!--The HTML <head> element is a container for the following elements: <title>, <style>, <meta>, <link>, <script>, and <base>-->
     <head>
-        <!--The <title> element defines the title of the document. The title must be text-only, and it is shown in the browser's title bar or in the page's tab.-->
-        <title>David Talson Personal Webpage</title>
-        <link href="./resources/css/smallscreen.css" type="text/css" rel="stylesheet">
-        <link rel="stylesheet" media="screen and (min-width: 400px) and (max-width: 1000px)" href="./resources/css/smallscreen.css">
+        <title>David Talson Webpage</title>
+        <link rel="stylesheet" href="./resources/css/style.css">
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-       
-        <header>
-            
-            <div class="banner">
-                <div class=widgetsTop>
-                    <ul>
-                            <li><p id="month"></p><p>, </p><p id="day"></p></li>
-                            <li><p id="hour"></p><p>:</p><p id="min"></p></li>
-                            <li><p> Dream big, <br>dare to fail</p></li>
-                    </ul>
-                    <script src="./scripts/returnmonth.js"></script>
-                </div>
-                <div id="rowLion">
-                    <img src="resources/images/David.jpg" alt="lion"/>
-                </div>
-                <p id="me">David Talson </p>
-            </div>  
-                   
-        </header>
-
-        <nav>
-            <ul>
-                <li>
-                    <div class="social">
-                        <a href="https://ca.linkedin.com/in/david-talson-718834132" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
-                        <a href="https://drive.google.com/file/d/1gEnUUEc_e-p8kuCZa3iX0jnUYHzIzliP/view?usp=sharing" target="_blank"><i class="fa fa-file fa-2x"></i></a>
-                    </div>
-                </li>
-                <li>
-                    <div class="collapsable-menu">
-                        <input type="checkbox" id="menu">
-                        <label for="menu">Menu</label>
-                        <div class="menu-content">
-                            <ul>
-                                <li><a href="#"></a>..In progress..</li>
-                                <!--<li><a href="#"></a>About</li>
-                                <li><a href="#"></a>Blog</li>
-                                <li><a href="#"></a>Projects</li> -->
-                            </ul>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </nav>
-
-        
-        <div class="about" id="flexDavid">
-            <div class="summary">
-                <h2>About Me</h2>
-                <p> I am an Electrical engineering graduate with interest in
-                    software development, mainly in algorithm development and artificial
-                    intelligence. I am an easy going person, I enjoy widlife
-                    ,a good game of soccer, and malt. 
-
-                </p>
-            </div>
-            <hr>
-            <div class="information">
-                <h2>Skills</h2>            
-                    <div class="skills">
-                        <div class="row"><img src="resources/images/html.png" alt="html">
-                            <img src="resources/images/c.png" alt="C++">
-                            <img src="resources/images/docker.png" alt="Docker">
-                            <img src="resources/images/git.png" alt="Git">
-                            <img src="resources/images/java.png" alt="Java">
-                            <img src="resources/images/linux.png" alt="Java">
-                        </div>
-                        <div class="row"><img src="resources/images/matlab.png" alt="Matlab">
-                            <img src="resources/images/python.png" alt="Python">
-                            <img src="resources/images/selenium.jpeg" alt="Selenium">
-                            <img src="resources/images/gnu-bash.png" alt="Shell scripting">
-                        </div>
-                        
-                    </div> 
-                </div>
-            <hr>          
-            
-            <div class="work">
-                <h2>Work</h2>
-
-                <div id="slideshow-example" data-component="slideshow">
-                    <div role="list">
-                        <div class="slide">
-                            <h2>Capstone project: Pacemaker simulation</h2>
-                            <img src="./resources/images/pacemaker.png" alt="Fourth Year project">
-                        </div>
-                        <div class="slide">
-                            <h2>This webpage: html and css</h2>
-                            <img src="./resources/images/html.png" alt="HTML">
-                        </div>
-                        <div class="slide">
-                            <h2>Data structures and Algorithms</h2>
-                            <img src="./resources/images/c.png" alt="C++">
-                        </div>
-                    </div>
-                </div>
-                <script src="./scripts/slides.js"></script>
-
-
-            </div>
-            <hr>
-
-        </div> 
-            
+        <div class="navbar">
+            <a class="active" href="./indexOldNew.html"><i class="fa fa-fw fa-home"></i> Home</a> 
+            <a href="./html/projects.html"><i class="fa fa-fw fa-code"></i>Projects</a> 
+            <a href="./html/certification.html"><i class="fa fa-fw fa-file"></i>Certifications</a>
         </div>
-    </body>
-    <footer>
-        <span>Copyright 2020</span>
-    </footer>
+        <div class=widgetsTop>
+            <ul>
+                    <li id="date"><p><i class="fa fa-calendar-o fa-lg"></i><p id="month"></p><p>,&nbsp </p><p id="day"></p></p></li>
+                    <li id="time"><p><i class="fa fa-clock-o fa-lg"></i><p id="hour"></p><p>:</p><p id="min"></p></p></li>
+                    <li id="temperature"><p><i class="fa fa-thermometer-1"></i><p id="hour"></p><p>:</p><p id="min"></p></p></li>
+            </ul>
+            <script src="./scripts/returnmonth.js"></script>
+        </div>
+        <div class="mainContent">
+
+            <div class="aboutMe">
+                <p><i>"Dream big and dare to fail"</i></p>
+                <div id="david">
+                    <img src="resources/images/David.jpg" alt="David Talson"/>
+                </div>
+                <div class="summary">
+                    <h2>David Talson</h2>
+                    <p> I am an Electrical engineering graduate with interest in
+                        software development, mainly in algorithm development and artificial
+                        intelligence. I am an easy going person, I enjoy widlife
+                        ,a good game of soccer, and malt. 
+                    
+                    
+                    
+                    
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="skills">
+                <h2> <i class="fa fa-wrench fa-spin fa-lg"></i> &nbsp Skills</h2>
+               <div>
+                    <div class="skillsCol">
+                        <ul>
+                            <li><p><p>C++</p><i class="fa fa-star checked fa-lg"></i>
+                                                    <i class="fa fa-star checked fa-lg"></i>
+                                                    <i class="fa fa-star checked fa-lg"></i>
+                                                    <i class="fa fa-star checked fa-lg"></i>
+                                                    
+                            </p></li>
+                            <li><p><p>Python</p><i class="fa fa-star checked fa-lg"></i>
+                                <i class="fa fa-star checked fa-lg"></i>
+                                <i class="fa fa-star checked fa-lg"></i>
+                                <i class="fa fa-star checked fa-lg"></i>
+                                
+                            </p></li>
+                            <li><p><p>Matlab</p><i class="fa fa-star checked fa-lg"></i>
+                                <i class="fa fa-star checked fa-lg"></i>
+                                <i class="fa fa-star checked fa-lg"></i>
+                                <i class="fa fa-star checked fa-lg"></i>
+                                
+                            </p></li>
+                            <li><p><p>Docker</p><i class="fa fa-star checked fa-lg"></i>
+                                <i class="fa fa-star checked fa-lg"></i>
+                                <i class="fa fa-star checked fa-lg"></i>
+                                <i class="fa fa-star checked fa-lg"></i>
+                                
+                            </p></li>
+                        </ul>
+                        <ul>
+                            <li><p><p>Agile</p><i class="fa fa-star checked fa-lg"></i>
+                                <i class="fa fa-star checked fa-lg"></i>
+                                <i class="fa fa-star checked fa-lg"></i>
+                                <i class="fa fa-star checked fa-lg"></i>
+                                
+                            </p></li>
+                            <li><p><p>Html</p><i class="fa fa-star checked fa-lg"></i>
+                                <i class="fa fa-star checked fa-lg"></i>
+                                <i class="fa fa-star checked fa-lg"></i>
+                                <i class="fa fa-star checked fa-lg"></i>
+                                
+                            </p></li>
+                            <li><p><p>Selenium</p><i class="fa fa-star checked fa-lg"></i>
+                                                    <i class="fa fa-star checked fa-lg"></i>
+                                                    <i class="fa fa-star checked fa-lg"></i>
+                                                    <i class="fa fa-star checked fa-lg"></i>
+                                                   
+                            </p></li>
+                            <li><p><p>Java</p><i class="fa fa-star checked fa-lg"></i>
+                                <i class="fa fa-star checked fa-lg"></i>
+                                <i class="fa fa-star checked fa-lg"></i>
+                                <i class="fa fa-star checked fa-lg"></i>
+                               
+                            </p></li>
+            
+                        </ul>
+
+                    </div>
+                    <div class="socials">
+                        <a href="https://drive.google.com/file/d/1DZUhfKv4MLX9eT3vJZ9eggisuCH_eaJm/view?usp=sharing" target="_blank"> <i class="fa fa-file-pdf-o fa-lg"></i>Resume </a> 
+                        <a href="https://ca.linkedin.com/in/david-talson-718834132" target="_blank"><i class="fa fa-linkedin fa-lg"></i>LinkedIn</a> 
+                        <a href="#"><i class="fa fa-instagram fa-lg"></i>Instagram</a>
+                    </div>
+               </div> 
+            </div>
+        </div>
+        <div class="misc">
+            <div class="game">
+                <h3>Age Guessing Game</h3>
+                <button type="button" onclick="alert('Hello world!')">Click to Play</button>
+            </div>
+            <div class="likeunlike">
+                <button class="btn" onclick="clickCounter()" type="button" ><i class="fa fa-thumbs-o-up fa-3x"></i></button><span id="likes"></span>
+                <button class="btn" onclick="clickCounter()" type="button"><i class="fa fa-thumbs-o-down fa-3x"></i></button><span id="dislikes"></span>
+            </div>
+            <script src="./scripts/clickCounter.js"></script>
+        </div>
+        <div class="contactForm">
+            <div>
+                <h2>Contact</h2>
+                <p>Fields marked in * are required</p>
+            </div>
+            <div class="container">
+                <form action="action_page.php">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                    <label for="subject">Message</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:2em"></textarea>
+
+                    <input type="submit" value="Submit">
+
+                </form>
+            </div>
+        </div>
+</body>
+<footer>
+    <span>Copyright 2021</span>
+</footer>
 </html>

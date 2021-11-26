@@ -1,124 +1,299 @@
+
 html, body {
-    margin: 0;
-    padding: 0;
-  
+  margin: 0;
+  padding: 0.2em 0.5em 0.5em 0.5em;
+ 
+  background-color:#212221;
+}
+h1, h2, h3, h4 ,span,p{
+  color: #DEB992;
 }
 
-  header{
-    background-color: #333333;
-    max-width:100%;
-    max-height: auto;
-    display: inline-flex;
-    align-items: center;
-  
-    
-  }
-  .banner {
-    display: flex;
-    justify-content:center; 
-    
-    max-width: 25%;
-    
-  }
-  .banner img {
-      max-width: 70%;
-      max-height: auto;
-      border-radius: 10em;
-      flex: 2 2 700px;
-      
-  }
-
-nav {
-    width: 70%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    margin: 0.25em 0 0 0;
-   
-  }
-  nav ul {
-      display:inline-flex;
-      width: 100%;
-      height: auto;
-      
-        
-  }
-  nav li {
-    color: #fff;
-    font-family: "cursive", sans-serif;
-    font-size: 1.25rem;
-    display: flex;
-    width: 100%;
-    height: auto; 
-    
-  }
-  .widgets {
-    width: 15%;
-    height: auto;  
-}
-    #clock{
-       
-        align-content: flex-end;
-        max-width: 50%;
-        
-    }
-    #weather{
-        
-        align-content: flex-end;
-        max-width: 70%;
-        max-height: auto;
-        
-    }
-  .clock {
-  }
-  .weatherwidget-io{
-    
-  }
-  a {
-    color:snow;
-    text-decoration: none;
-    padding: 0.3em 0.3em;
-    
-  }
-  
-h1,
-h2,
-h3,
 p {
-    font-family: "Helvetica", sans-serif;
+  font-size: 0.9em;
 }
-.logo {
+
+.navbar {
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  width: 100%;
+  background-color: #051622;
+  overflow: auto;
+  display: flex;
+  justify-content: flex-end;
+  border-style: solid;
+  border-width: thin;
+  border-color: #DEB992;
+  border-radius: 1%;
+  animation: bounceLeft 3s infinite alternate;
+}
+
+.navbar a {
+  float: left;
+  padding: 0.5em;
+  color:#DEB992;
+  text-decoration: none;
+  font-size: 1.1em;
+  display: inline-flex;
+  justify-content: flex-end;
+}
+
+.navbar a:hover {
+  background-color: gainsboro;
+}
+
+.active {
+  background-color: #1BA098;
+}
+
+.widgetsTop {
+  width: 100%;
+  background-color: #051622;
+  display:flex;
+  justify-content: center;
+  margin-top: 0.3em;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  border-style: solid;
+  border-width: thin;
+  border-color: #DEB992;
+  border-radius: 1%;
+  animation: bounceRight 3s infinite alternate;
+} 
+.widgetsTop ul {
+  display: flex;
+  justify-content: space-between;
+  background-color: #051622;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  width: 100%;
+} 
+
+.widgetsTop li {
+  color: #DEB992;
+  font-size: 1em;
+  display: flex;
+  width: 100%;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+.widgetsTop #date{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.widgetsTop #time{
+  display: flex;
+  justify-content: center;
+}
+
+.widgetsTop #temperature{
+  display: flex;
+  justify-content: flex-end;
+}
+.widgetsTop i {
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+}
+
+.mainContent {
+  display: inline-flex;
+  background-color: #051622;
+  width: 100%;
+  margin-top: 0.3em;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  overflow: auto;
+  border-style: solid;
+  border-width: thin;
+  border-color: #DEB992;
+  border-radius: 1%;
+  animation: bounceLeft 3s infinite alternate;
+}
+.aboutMe p {
+  display: flex;
+  justify-content: center;
+  color:#DEB992;
+}
+.mainContent #david {
+  display: flex;
+  justify-content: center;
+}
+.mainContent #david img{
+  max-width:40%;
+  border-radius: 50%;
+}
+.summary h2{
+  display: flex;
+  justify-content: center;
+  color:#DEB992;
+}
+
+.skills {
+  display: block;
+  width:100%;
+}
+.skills h2{
+  display: flex;
+  justify-content: center;
+  color:#DEB992;
+}
+
+.skillsCol {
+  display: flex;
+  padding: 0em 0em 0em 0em;
+  width: 100%;
+  justify-content: flex-start;
+}
+.skillsCol p {
+  padding-right: 0.5em;
+}
+.checked {
+  color:  #1BA098;
+}
+.skills ul {
+  display: block;
+  padding-left: 0em;  
+  width: 100%;
+}
+
+.skills li {
+  color: #DEB992;
+  font-size: 1.1em;
+  display: flex;
+  width: 100%;
+  align-items: center;
+
+  padding-left: 0em;
+}
+.socials {
+  display: flex;
+  justify-content: space-around;
+}
+.socials a {
+  color: #DEB992;
+  text-decoration: none;
+}
+
+.socials i {
+  padding-right: 0.2em;
+  padding-left: 0.5em;
+}
+.misc {
+  display: flex;
+  background-color: #051622;
+  width: 100%;
+  margin-top: 0.3em;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  overflow: auto;
+  justify-content: space-around;
+  border-style: solid;
+  border-width: thin;
+  border-color: #DEB992;
+  border-radius: 1%;
+  animation: bounceRight 3s infinite alternate;
+}
+.likeunlike {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 60%;
+  
+}
+.game {
+  display: block;
+  text-align: center;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  color:#DEB992;
+}
+.misc button:hover {
+  background-color: gainsboro;
+}
+.contactForm {
+  display: block;
+  background-color: #051622;
+  width: 100%;
+  margin-top: 0.3em;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  overflow: auto;
+  justify-content: space-around;
+  border-radius: 1%;
+  border-style: solid;
+  border-width: thin;
+  border-color: #DEB992;
+  animation: bounceLeft 3s infinite alternate;
+  color:#DEB992;
+}
+.container {
+  display: block;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 1em;
+  padding: 0em 0em 0em 0em;
+  margin-top: 0.5em;
+  background-color: #051622;
+}
+footer span {
+  font-size: 1em;
+  font-weight: bold;
+}
+@media screen and (max-width: 700px) {
+ 
+  .navbar {
+    display: block;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+  .navbar a {
+    float: none;
     display: flex;
     justify-content: center;
-}
-.social{
+  }
+  .mainContent{
+    display: block;
+  }
+  .misc {
+    display: inline-block;
+    justify-content: center;
+  }
+  .likeunlike {
+    margin-top:0.5em;
     display: flex;
-    justify-content: space-between;
-    max-width: 25%;
-    height: auto;
+    justify-content: center;
+    max-width:50%;
+  }
+  .contactForm {
+    display: block;
+  }
+  .container {
+    display:block;
+   
+  }
 }
-.about {
-    display: flex;
-    width: 100%;
-    height:35em;
-    
-    
+
+@keyframes bounceLeft {
+  from {
+    transform: rotate(0.5deg);
+  }
+  to {
+    transform: rotate(-0.5deg);
+  }
 }
-.david {
-    max-width:25em;
-    max-height: auto;
-    padding: 3em 3em 3em 3em;
-    
+@keyframes bounceRight {
+  from {
+    transform: rotate(-0.5deg);
+  }
+  to {
+    transform: rotate(0.5deg);
+  }
 }
-#flexDavid .david{
-    align-items: center;   
-    
-}
-.information h2{
-    margin: 2em 0em 0em 0em;
-}
-.david img{
-    max-width:100%;
-    height: auto;
-    border-radius: 5em ; 
+@-webkit-keyframes image {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-10px);
+  }
 }
