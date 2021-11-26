@@ -12,7 +12,7 @@ h1, h2, h3, h4 ,span,p,a{
 }
 
 p {
-  font-size: 0.9em;
+  font-size: 1.1em;
 }
 
 .navbar {
@@ -71,7 +71,7 @@ p {
 
 .widgetsTop li {
   color: wheat;
-  font-size: 1em;
+  font-size: 1.1em;
   display: flex;
   width: 100%;
   margin: 0 0 0 0;
@@ -128,6 +128,9 @@ p {
   justify-content: center;
   color:wheat;
 }
+.summary p {
+  font-size: 1.1em;
+}
 
 .skills {
   display: block;
@@ -173,6 +176,7 @@ p {
 .socials a {
   color: wheat;
   text-decoration: none;
+  font-size: 1.1em;
 }
 
 .socials i {
@@ -222,8 +226,9 @@ p {
   border-style: solid;
   border-width: thin;
   border-color: wheat;
+  color: wheat;
   animation: bounceLeft 2s infinite alternate;
-  color:#DEB992;
+  
 }
 .container {
   display: block;
@@ -277,18 +282,18 @@ footer span {
 
 @keyframes bounceLeft {
   from {
-    transform: rotate(0.9deg);
+    transform: rotate(0.7deg);
   }
   to {
-    transform: rotate(-0.9deg);
+    transform: rotate(-0.7deg);
   }
 }
 @keyframes bounceRight {
   from {
-    transform: rotate(-0.9deg);
+    transform: rotate(-0.7deg);
   }
   to {
-    transform: rotate(0.9deg);
+    transform: rotate(0.7deg);
   }
 }
 @-webkit-keyframes image {
