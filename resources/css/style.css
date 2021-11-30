@@ -1,12 +1,9 @@
 
-html, body {
+html, body, button {
   margin: 0.5em 0.5em 0.5em 0em;
   padding: 0.2em 0.5em 0.5em 0.5em;
- 
-  background-color:#051622;
-}
-h1, h2, h3, h4 ,span,p,a{
   color: wheat;
+  background-color:#051622;
   letter-spacing: 0.05em;
   font-family: "Optima", sans-serif;
 }
@@ -16,7 +13,7 @@ p {
 }
 
 .navbar {
-  padding: 0.5em 0.5em 0.5em 0.5em;
+  padding: 0.5em 1em 0.5em 1em;
   width: 100%;
   background-color: #051622;
   overflow: auto;
@@ -49,11 +46,11 @@ p {
 
 .widgetsTop {
   width: 100%;
-  background-color: #051622;
+  
   display:flex;
   justify-content: center;
   margin-top: 0.3em;
-  padding: 0.5em 0.5em 0.5em 0.5em;
+  padding: 0.5em 1em 0.5em 1em;
   border-style: solid;
   border-width: thin;
   border-color: wheat;
@@ -63,19 +60,23 @@ p {
 .widgetsTop ul {
   display: flex;
   justify-content: space-between;
-  background-color: #051622;
   margin: 0 0 0 0;
   padding: 0 0 0 0;
   width: 100%;
 } 
 
 .widgetsTop li {
-  color: wheat;
-  font-size: 1.1em;
+  
+  font-size: 0.9em;
   display: flex;
   width: 100%;
   margin: 0 0 0 0;
   padding: 0 0 0 0;
+}
+
+.widgetsTop .btn {
+  padding: 0.2em 0.2em 0.2em 0.2em;
+  border-radius: 10%;
 }
 
 .widgetsTop #date{
@@ -102,7 +103,7 @@ p {
   background-color: #051622;
   width: 100%;
   margin-top: 0.3em;
-  padding: 0.5em 0.5em 0.5em 0.5em;
+  padding: 0.5em 1em 0.5em 1em;
   overflow: auto;
   border-style: solid;
   border-width: thin;
@@ -110,23 +111,27 @@ p {
   border-radius: 1%;
   animation: bounceLeft 2s infinite alternate;
 }
+.aboutMe {
+  max-width: 100%;
+}
 .aboutMe p {
   display: flex;
   justify-content: center;
-  color:wheat;
+  color:#f5deb3;
 }
 .mainContent #david {
   display: flex;
   justify-content: center;
+  
 }
 .mainContent #david img{
-  max-width:40%;
+  max-width:60%;
   border-radius: 50%;
 }
 .summary h2{
   display: flex;
   justify-content: center;
-  color:wheat;
+  color: #1BA098;
 }
 .summary p {
   font-size: 1.1em;
@@ -188,7 +193,7 @@ p {
   background-color: #051622;
   width: 100%;
   margin-top: 0.3em;
-  padding: 0.5em 0.5em 0.5em 0.5em;
+  padding: 0.5em 1em 0.5em 1em;
   overflow: auto;
   justify-content: space-around;
   border-style: solid;
