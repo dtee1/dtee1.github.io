@@ -96,6 +96,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 18px;
   display: inline-block;
   background: #212431;
+  align-items: center;
   color: wheat;
   line-height: 1;
   padding: 8px 0;
@@ -112,6 +113,18 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
 }
 
+#header .profile .social-links a .social-tooltip {
+  visibility: hidden;
+  background-color: #212431;
+  color: wheat;
+  position: absolute;
+  top: 34%;
+  font-size: 12px;
+
+}
+#header .profile .social-links a:hover .social-tooltip {
+  visibility: visible;
+}
 #main {
   margin-left: 300px;
 }
@@ -173,7 +186,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 24px;
   transition: all 0.4s;
   outline: none !important;
-  background-color: #149ddd;
+  background-color: #051622;
   color: #fff;
   width: 40px;
   height: 40px;
@@ -196,6 +209,7 @@ h1, h2, h3, h4, h5, h6 {
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
+  
   width: 100%;
   height: 100vh;
   background: url("../img/background.JPG");
@@ -219,6 +233,11 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   z-index: 0;
   min-width: 300px;
+}
+#hero .down-arrow{
+  position: absolute;
+  bottom: 50px;
+  color:white;
 }
 #hero h1 {
   margin: 0 0 10px 0;
@@ -325,7 +344,7 @@ section {
   padding-bottom: 30px;
 }
 .facts .count-box {
-  padding: 30px;
+  padding: 0px;
   width: 100%;
 }
 .facts .count-box i {
