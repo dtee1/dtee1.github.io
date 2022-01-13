@@ -215,8 +215,7 @@ h1, h2, h3, h4, h5, h6 {
   background: url("../img/background.jpg");
   filter: contrast(130%);
   filter: brightness(120%)
-  background-position: center;
-  background-size: cover;
+ 
   
 }
 #hero:before {
