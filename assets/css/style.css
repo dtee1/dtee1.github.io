@@ -463,17 +463,7 @@ section {
 .resume .resume-item:last-child {
   padding-bottom: 0;
 }
-.resume .resume-item::before {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  border-radius: 50px;
-  left: -9px;
-  top: 0;
-  background: #fff;
-  border: 2px solid #1f5297;
-}
+
 
 /*--------------------------------------------------------------
 # Portfolio
@@ -489,6 +479,9 @@ section {
 .portfolio .portfolio-wrapp a {
   color: #272829;
   text-decoration: none;
+}
+.portfolio .portfolio-wrapp a p {
+  padding-top: 10px;
 }
 .portfolio #portfolio-filters {
   padding: 0;
