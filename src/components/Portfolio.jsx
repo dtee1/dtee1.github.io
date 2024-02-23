@@ -1,67 +1,74 @@
-import React from 'react'
-import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg"
-import installNode from "../assets/portfolio/installNode.jpg"
-import reactParallax from "../assets/portfolio/reactParallax.jpg"
-import reactSmooth from "../assets/portfolio/reactSmooth.jpg"
-import reactWeather from "../assets/portfolio/reactWeather.jpg"
+import React,  { useState, useEffect } from 'react';
+import qDrone from "../assets/portfolio/qdrone.png";
+import qdroneDemoVideo from '../assets/portfolio/qdrone_demo.mp4';
+import installNode from "../assets/portfolio/installNode.jpg";
+import reactParallax from "../assets/portfolio/reactParallax.jpg";
+import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
+import reactWeather from "../assets/portfolio/reactWeather.jpg";
+import './Portfolio.css'; // Import the CSS file
+import VideoModal from './VideoModal'; 
 
 const Portfolio = () => {
+    const [showVideo, setShowVideo] = useState(false);
+    const [videoSrc, setVideoSrc] = useState('');
+    const [modalTop, setModalTop] = useState(0);
+    useEffect(() => {
+        function handleScroll() {
+            setModalTop(window.scrollY);
+        }
+
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+    const handleDemoButtonClick = (src) => {
+        setVideoSrc(src);
+        setShowVideo(true);
+    };
+    const handleCloseModal = () => {
+        setShowVideo(false);
+    };
+
     const portfolios = [
         {
             id: 1,
-            src: arrayDestruct
+            src: qDrone,
+            title: 'Target Drone with Autonoumous Landing',
+            videoSrc: qdroneDemoVideo,
         },
-        {
-            id: 2,
-            src: reactParallax
-        },
-        {
-            id: 3,
-            src: arrayDestruct
-        },
-        {
-            id: 4,
-            src: reactSmooth
-        },
-        {
-            id: 5,
-            src: installNode
-        },
-        {
-            id: 6,
-            src: reactWeather
-        },
-    ]
-  return (
-    <div name="portfolio" className="bg-gradient-to-b from-gray-800 to-black w-full text-white md:h-screen">
-        <div className="max-w-screen-lg p-4 py-40 mx-auto flex flex-col justify-center w-full h-full">
-            <div className="pb-8">
-                <p className="text-4xl font-bold inline border-b-4 border-gray-500">Portfolio</p>
-                <p className="py-6">Check out some of my work</p>
-            </div>
-            
-            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-            {
-                portfolios.map(({id,src}) => (
-                    <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
-                    <img src={src} alt="" className="rounded-md duration-200 hover:scale-105"/>
-                    <div className="flex items-center justify-center" >
-                        <button className = "w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                            Demo
-                        </button>
-                        <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                            Code
-                        </button>
-                    </div>
-                </div>
-                    
-                ))
-            }
-                
-            </div>
-        </div>
-    </div>
-  )
-}
+        
+    ];
 
-export default Portfolio
+    return (
+        <div name="portfolio" className="portfolio-container">
+            <div className="portfolio-content">
+                <div className="portfolio-heading">
+                    <p className="portfolio-title">Portfolio</p>
+                    <p className="portfolio-description">Check out some of my work</p>
+                </div>
+                <div className="portfolio-grid">
+                    {portfolios.map(({ id, src, title, videoSrc }) => (
+                        <div key={id} className="portfolio-item">
+                            <img src={src} alt="" className="portfolio-image"/>
+                            <div className="project-name"> 
+                                <p className="project-name">{title}</p>
+                                <div className="portfolio-buttons">
+                                  
+                                    <button className="demo-button" onClick={() => handleDemoButtonClick(videoSrc)}>Demo</button>
+                                    <button className="code-button">Code</button>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    ))}
+                </div>
+            </div>
+            {showVideo && (
+                <VideoModal videoSrc={videoSrc} onClose={handleCloseModal} />
+            )}
+        </div>
+    );
+};
+
+export default Portfolio;

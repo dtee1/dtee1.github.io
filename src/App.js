@@ -1,22 +1,24 @@
 import NavBar from "./components/NavBar";
 import Home from "./components/Home";
 import SocialLinks from "./components/SocialLinks";
-import About from "./components/About";
 import Portfolio from "./components/Portfolio";
-import Experience from "./components/Experience";
-import Contact from "./components/Contact";
 
+import Contact from "./components/Contact";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import store from './store/store';
+import { Provider } from 'react-redux';
 function App() {
   return (
-    <div>
-      <NavBar/>
-      <Home/>
-      <SocialLinks/>
-      <About/>
-      <Portfolio/>
-      <Experience/>
-      <Contact/>
-    </div>
+    <Provider store={store}>
+      <div>
+        <NavBar/>
+        <Home/>
+        <SocialLinks/>
+        <Portfolio/>
+        <Contact/>
+      </div>
+    </Provider>
   );
 }
 
