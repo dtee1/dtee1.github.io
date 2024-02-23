@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import article1 from "../assets/portfolio/article1.png";
 import { BsArrowRight } from 'react-icons/bs';
 import { Link } from 'react-scroll';
@@ -36,6 +36,8 @@ const Home = () => {
     draggable: true,
     autoplay: true,
     speed: 12000,
+    arrows: false,
+    
   };
   var settings2 = {
     dots: false,
@@ -46,6 +48,7 @@ const Home = () => {
     draggable: true,
     autoplay: true,
     speed: 1000,
+    arrows: false,
   };
   const portfolios = [
     {
@@ -130,7 +133,6 @@ const Home = () => {
         <div className="hero" >
           <div className="hero-column">
           <h2 className="hero-title">AI Engineer</h2>
-          <p className="hero-title">{numSlides}</p>
           <p className="hero-description">
             Interested in the application of artificial intelligence to solve real world problems
           </p>

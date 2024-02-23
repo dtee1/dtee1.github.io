@@ -1,10 +1,6 @@
 import React,  { useState, useEffect } from 'react';
 import qDrone from "../assets/portfolio/qdrone.png";
 import qdroneDemoVideo from '../assets/portfolio/qdrone_demo.mp4';
-import installNode from "../assets/portfolio/installNode.jpg";
-import reactParallax from "../assets/portfolio/reactParallax.jpg";
-import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
-import reactWeather from "../assets/portfolio/reactWeather.jpg";
 import './Portfolio.css'; // Import the CSS file
 import VideoModal from './VideoModal'; 
 
