@@ -1,0 +1,8 @@
+body {
+    font-family: 'Arial', sans-serif; /* Set your preferred font family */
+  }
+  
+  /* Example of setting letter spacing for all text */
+  .text {
+    letter-spacing: 1px; /* Set the letter spacing as needed */
+  }

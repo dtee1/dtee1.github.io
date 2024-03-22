@@ -1,6 +1,7 @@
 import React,  { useState, useEffect } from 'react';
 import qDrone from "../assets/portfolio/qdrone.png";
 import qdroneDemoVideo from '../assets/portfolio/qdrone_demo.mp4';
+import { FaFolder } from 'react-icons/fa';
 import './Portfolio.css'; // Import the CSS file
 import VideoModal from './VideoModal'; 
 
@@ -40,8 +41,8 @@ const Portfolio = () => {
         <div name="portfolio" className="portfolio-container">
             <div className="portfolio-content">
                 <div className="portfolio-heading">
-                    <p className="portfolio-title">Portfolio</p>
-                    <p className="portfolio-description">Check out some of my work</p>
+                    <p className="portfolio-title">Portfolio <FaFolder/></p>
+                    
                 </div>
                 <div className="portfolio-grid">
                     {portfolios.map(({ id, src, title, videoSrc }) => (

@@ -8,5 +8,23 @@
 @layer base {
   html {
     font-family: 'Raleway', sans-serif;
+    background: linear-gradient(135deg, #F2F9FF, #EBF7FF); /* Lighter gradient blue */
+    animation: moveGradient 5s ease infinite alternate;
   }
+  body {
+    font-family: 'Arial', sans-serif; /* Set your preferred font family */
+  }
+  
+  /* Example of setting letter spacing for all text */
+  .text {
+    letter-spacing: 100px; /* Set the letter spacing as needed */
+  }
+}
+body {
+  font-family: 'Arial', sans-serif; /* Set your preferred font family */
+}
+
+/* Example of setting letter spacing for all text */
+.text {
+  letter-spacing: 100px; /* Set the letter spacing as needed */
 }

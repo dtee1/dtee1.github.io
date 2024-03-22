@@ -13,8 +13,13 @@ import Python from "../assets/python.png";
 import Vuejs from "../assets/vuejs.png";
 import Pytorch from "../assets/pytorch.png";
 import Tensorflow from "../assets/tensorflow.png";
+
 import { FaExternalLinkAlt } from 'react-icons/fa';
+import { FaPen } from 'react-icons/fa';
+import { FaUserTie } from 'react-icons/fa';
+import { FaBookOpen } from 'react-icons/fa';
 import { useSelector } from 'react-redux';
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 
 
@@ -34,9 +39,11 @@ const Home = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     draggable: true,
-    autoplay: true,
-    speed: 12000,
-    arrows: false,
+    autoplay: false,
+    speed: 1200,
+    arrows:true,
+    prevArrow: <FaChevronLeft className="slick-prev" />, 
+    nextArrow: <FaChevronRight className="slick-next" />,
     
   };
   var settings2 = {
@@ -49,6 +56,7 @@ const Home = () => {
     autoplay: true,
     speed: 1000,
     arrows: false,
+   
   };
   const portfolios = [
     {
@@ -63,8 +71,26 @@ const Home = () => {
     title: 'Demystifying Machine Learning: A Hands-On Guide to Manual Model Implementation',
     style: 'orange'
 },
+
     
 ];
+const currentReads = [
+  {
+    id: 1,
+    src: article1,
+    title: 'Demystifying Machine Learning: A Hands-On Guide to Manual Model Implementation',
+    style: 'orange'
+},
+{
+  id: 2,
+  src: article1,
+  title: 'Demystifying Machine Learning: A Hands-On Guide to Manual Model Implementation',
+  style: 'orange'
+},
+
+  
+];
+
 
     
   const skills = [
@@ -132,7 +158,7 @@ const Home = () => {
       <div className="content-wrapper">
         <div className="hero" >
           <div className="hero-column">
-          <h2 className="hero-title">AI Engineer</h2>
+          <h2 className="hero-title">AI Engineer <FaUserTie /></h2>
           <p className="hero-description">
             Interested in the application of artificial intelligence to solve real world problems
           </p>
@@ -162,10 +188,10 @@ const Home = () => {
           </div>
           
         </div>
-        <div className="vertical-line"> </div>
+    
         <div className="articles-column">
           <div className="articles-row">
-            <h2 className="hero-title">Publications</h2>
+            <h2 className="hero-title">Publications <FaPen/></h2>
             <div className="publications">
               <Slider {...settings}>
               {portfolios.map(({ id, src, title }) => (
@@ -182,18 +208,18 @@ const Home = () => {
           </div>
           
           <div className="articles-row">
-            <h2 className="hero-title">Current Reads</h2>
+            <h2 className="hero-title">Current Reads <FaBookOpen /></h2>
             <div className="articles">
                 <Slider {...settings}>
-                  {/* {portfolios.map(({ id, src }) => (
-                    <div key={id} className="portfolio-item">
-                      <img src={src} alt="" className="portfolio-image"/>
-                      <div className="portfolio-buttons">
-                        <button className="demo-button">Demo</button>
-                        <button className="code-button">Code</button>
-                      </div>
-                    </div>
-                  ))} */}
+                {currentReads.map(({ id, src, title }) => (
+                <div key={id} className="publication-item">
+                  <button className="publication-link" onClick={() => handleClick("https://medium.com/@davidtalson/demystifying-machine-learning-a-hands-on-guide-to-manual-model-implementation-292827aead67")}>   <img src={src} alt="" className="publication-image"/>
+                  <div className="publication-title">
+                  <p >{title}</p><FaExternalLinkAlt className="link-icon" />
+                    </div></button>
+               
+                </div>
+              ))}
                   <div>
                     <h3>1</h3>
                   </div>

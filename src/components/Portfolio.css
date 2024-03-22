@@ -1,13 +1,15 @@
 .portfolio-container {
-    background: linear-gradient(to bottom, gray 800, black);
-    width: 100%;
-    color: black;
+    max-width: 80vw;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px;
 }
 
 .portfolio-content {
     width: 100%;
     margin: 1rem auto;
-    padding: 0rem 4rem;
+    padding: 1rem 4rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,7 +23,10 @@
     font-size: 2.5rem;
     font-weight: bold;
     border-bottom: 4px solid gray;
-    display: inline;
+    display: flex;
+    color: #14405d;
+    align-items: center;
+    gap: 1rem;
 }
 
 .portfolio-description {
@@ -42,7 +47,7 @@
 }
 
 .portfolio-image {
-    width: 100%;
+    width: 80%;
     transition: transform 0.3s;
 }
 
@@ -87,29 +92,4 @@
     align-items: center;
     align-content: center;
     z-index:1;
-}
-.close-button{
-    background-color: white;
-    width: 5rem;
-    text-align: center;
-    width:50%;
-    margin:0;
-    padding: 0 0.5rem;
-    font-size: 1.5rem;
-}
-.close-icon {
-    font-size: 1.5rem;
-    padding: 0 0.5rem;
-}
-.close-button:hover {
-    background-color: lightcoral;
-    font-size: 1rem;
-    border-top-left-radius: 10px; /* Rounded top left corner */
-    border-top-right-radius: 10px; /* Rounded top right corner */
-}
-.video-modal video {
-    width: 50%;
-    height: 50%;
-    background-color: white;
-
 }

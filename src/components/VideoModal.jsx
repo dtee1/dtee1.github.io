@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import './VideoModal.css'; // Import the CSS file
+import './VideoModal.css';
 
 const VideoModal = ({ videoSrc, onClose }) => {
     const [modalTop, setModalTop] = useState(0);
@@ -35,13 +35,10 @@ const VideoModal = ({ videoSrc, onClose }) => {
             className="video-modal"
             style={{
                 top: `${modalTop + scrollTop}px`,
-                left: `${modalLeft}px`,
-                width: '100vw',
-                height: '100vh'
             }}
         >
             <div className="video-container">
-                <button className="close-button" onClick={onClose}>Close</button>
+                <button className="close-button" onClick={onClose}>Exit</button>
                 <video controls autoPlay>
                     <source src={videoSrc} type="video/mp4" />
                     Your browser does not support the video tag.

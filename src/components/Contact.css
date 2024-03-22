@@ -1,8 +1,10 @@
 .contact-container {
-    width: 100%;
-    background: linear-gradient(to bottom, black, gray 800);
+    width: 80vw;
+    margin: auto;
+    background-color: white;
     color: black;
-    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px;
 }
 
 .contact-content {

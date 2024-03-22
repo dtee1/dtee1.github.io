@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .app-container {
+    background-image: url('./assets/background.webp'); /* Path to your background image */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+   
+  }
+  body {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+    line-height: 1.5rem;
+  }
+  
