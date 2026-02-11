@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">David Talson - AI and Embedded Systems Engineer</title>
+  <desc id="desc">Portfolio banner for David Talson featuring AI, computer vision, and real-time systems.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b0f14" />
+      <stop offset="55%" stop-color="#0c1b1a" />
+      <stop offset="100%" stop-color="#0a1119" />
+    </linearGradient>
+    <radialGradient id="glow" cx="0.2" cy="0.2" r="0.8">
+      <stop offset="0%" stop-color="#4fb7b3" stop-opacity="0.7" />
+      <stop offset="60%" stop-color="#4fb7b3" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#4fb7b3" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <rect width="1200" height="630" fill="url(#glow)" />
+  <g fill="none" stroke="#4fb7b3" stroke-opacity="0.25">
+    <path d="M80 520 C 320 420, 480 520, 720 420" stroke-width="2" />
+    <path d="M160 560 C 360 460, 600 520, 920 430" stroke-width="1.5" />
+    <path d="M260 580 C 520 480, 700 520, 1040 460" stroke-width="1" />
+  </g>
+  <g fill="#e8f7f6">
+    <text x="90" y="240" font-size="64" font-family="Space Grotesk, Segoe UI, Arial, sans-serif" font-weight="700">David Talson</text>
+    <text x="90" y="320" font-size="34" font-family="Space Grotesk, Segoe UI, Arial, sans-serif" font-weight="500" fill="#bfe9e7">AI + Embedded Systems Engineer</text>
+    <text x="90" y="390" font-size="24" font-family="Space Grotesk, Segoe UI, Arial, sans-serif" font-weight="400" fill="#9fdad6">Computer Vision - Edge AI - Real-Time Systems</text>
+  </g>
+  <g fill="#4fb7b3">
+    <rect x="90" y="430" width="120" height="6" rx="3" />
+    <rect x="220" y="430" width="80" height="6" rx="3" opacity="0.7" />
+    <rect x="320" y="430" width="60" height="6" rx="3" opacity="0.5" />
+  </g>
+</svg>

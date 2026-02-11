@@ -1,0 +1,10 @@
+/* TEAM */
+Name: David Talson
+Role: AI + Embedded Systems Engineer
+Site: https://davidtalson.tech/
+GitHub: https://github.com/dtee1
+LinkedIn: https://www.linkedin.com/in/david-talson-meng-718834132/
+
+/* SITE */
+Last update: 2026-02-11
+Standards: HTML5, CSS3
